@@ -21,12 +21,15 @@
                         <ul>
                             <a class="menubt" href="{{route('home')}}">Setting</a>
                         </ul>
+                        <ul>
+                            <a class="menubt" href="{{route('bbs')}}">bulletin board</a>
+                        </ul>
                     </li>
                 </div>
             </div>
             <main>
                 <h2 class="title">@yield('title')</h2>
-                <div>
+                <div class ="content">
                     @yield('content')
                 </div><!--/.container-->
             </main>
@@ -46,6 +49,7 @@
     .header .list{
         float:right;
         padding-right: 7.5%;
+        list-style: none;
     }
     .header{
         padding-top: 10px;
@@ -89,5 +93,9 @@
     /* title */
     .title{
         padding-left:10px;
+    }
+    /* content */
+    .content{
+        margin: 4%;
     }
 </style>
